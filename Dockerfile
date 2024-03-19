@@ -1,5 +1,5 @@
 # Use the official Python 3.10 image as the base image
-FROM python:3.10
+FROM python:3.10-slim
 
 # Set the working directory inside the container to /app
 WORKDIR /app
@@ -14,4 +14,4 @@ RUN pip install flask scikit-learn
 EXPOSE 5000
 
 # Specify the command to run when the container starts. In this case, it runs the main.py file using the Python interpreter
-CMD ["python3", "main.py"]
+CMD ["python", "main.py"]
