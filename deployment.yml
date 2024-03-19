@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world-flask
-        image: ridamgupta/hello-world-flask
+        image: img2
         ports:
         - containerPort: 5000
         env:
