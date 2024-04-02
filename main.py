@@ -10,14 +10,6 @@ def hello():
     X, y = iris.data, iris.target
     model = RandomForestClassifier()
     model.fit(X, y)
-    return jsonify({'message': 'Model trained successfully!'})
-
-
-
-
-
-
-
-
+    return jsonify({'message': 'Model trained successfully!(hello)'})
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
