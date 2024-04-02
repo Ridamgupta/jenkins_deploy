@@ -12,5 +12,12 @@ def hello():
     model.fit(X, y)
     return jsonify({'message': 'Model trained successfully!'})
 
+
+
+
+
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
